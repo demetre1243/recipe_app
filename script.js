@@ -14,15 +14,16 @@ async function getRecipes(ingredient) {
 
     if (!data.meals) {
         recipeDiv.innerText = "რეცეპტები ვერ მოიძებნა!";
+        return;
     }
 
     data.meals.forEach((meal) => {
 
         const card = document.createElement("div");
         card.classList.add("card");
-        card.classList.add("card-img");
+        card.classList.add("recipe-card");
+
         recipeDiv.appendChild(card);
     })
-
 }
 
