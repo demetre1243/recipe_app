@@ -12,6 +12,8 @@ async function getRecipes(ingredient) {
     const response = await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${ingredient}`);
     const data = await response.json();
 
+    recipeDiv.innerHTML = '';
+
     if (!data.meals) {
         recipeDiv.innerText = "რეცეპტები ვერ მოიძებნა!";
         return;
