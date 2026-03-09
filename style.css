@@ -1,0 +1,15 @@
+.container {
+    border: 2px solid rgb(75 70 74);
+    border-radius: 0.5em;
+
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
