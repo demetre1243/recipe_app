@@ -1,9 +1,9 @@
-const searchbutton = document.getElementById("searchbutton");
-const searchinput = document.getElementById("searchinput");
+const searchButton = document.getElementById("searchbutton");
+const searchInput = document.getElementById("searchinput");
 const recipeDiv = document.getElementById("recipes");
 
-searchbutton.onclick = () => {
-    const food = searchinput.value;
+searchButton.onclick = () => {
+    const food = searchInput.value;
     getRecipes(food);
 }
 
