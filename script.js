@@ -23,8 +23,10 @@ async function getRecipes(ingredient) {
 
         const card = document.createElement("div");
         card.classList.add("card");
-        card.classList.add("recipe-card");
-
+        card.innerHTML = `
+        <img src="${meal.strMealThumb}">
+        <h3>${meal.strMeal}</h3>
+        `;
         recipeDiv.appendChild(card);
     })
 }
